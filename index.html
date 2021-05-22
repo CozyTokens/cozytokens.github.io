@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
 <style>
@@ -13,17 +13,8 @@ h2 {
 	padding: 5px
 }
 
-.gallery{
-  margin: auto;
-  width: 80%;
-  padding: 10px
-}
 
-.polaroid {
-  padding: 0 15px;
-  float: left;
-  width: 30%;
-}
+
 
 div.token img {
   width: 100%;
@@ -54,18 +45,40 @@ div.token_info_top {
 
 div.token_info_bottom {
   text-align: center;
-  padding: 10px 20px;
+  padding: 10px 25px;
 }
+
+@media only screen and (max-width: 600px){
+  .polaroid {
+    width: 90%;
+    margin: 6px 20px;
+  }
+
+}
+
+@media only screen and (min-width: 600px){
+  .polaroid {
+    width: 90%;
+  }
+}
+
+
+@media only screen and (min-width: 992px){
+.polaroid {
+  padding: 0 15px;
+  float: left;
+  width: 30%;
+}
+}
+
 
 </style>
 </head>
 <body>
 
 
-
-<div class="gallery">
-	<h1>Cozy Tokens Gallery</h1>
-	<h2>Coffee Series</h2>
+<h1>Cozy Tokens Gallery</h1>
+<h2>Coffee Series</h2>
 <div class="polaroid">
 	<div class="token">
 		<div class="token_info_top">
@@ -156,7 +169,6 @@ div.token_info_bottom {
 	</div>
 </div>
 
-</div>
 
 </body>
 </html>
